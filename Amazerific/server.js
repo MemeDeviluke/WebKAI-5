@@ -28,7 +28,7 @@ app.get("/todos.json", function (req, res) {
 // объекты JSON
 app.use(express.urlencoded({ extended: true }));
 // подключаемся к хранилищу данных Amazeriffic в Mongo
-mongoose.connect('mongodb://localhost:27017/amazeriffic', {
+mongoose.connect('mongodb://127.0.0.1:27017/amazeriffic', {
 		useNewUrlParser: true,
 		useUnifiedTopology: true ,
 	}).then(res => {
